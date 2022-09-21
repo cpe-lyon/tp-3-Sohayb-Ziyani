@@ -48,3 +48,26 @@ Attribution des droits aux groupes :
 
 ![image](https://user-images.githubusercontent.com/80455771/191527438-d6205229-85f5-46f0-a6a6-0ddb9112b39a.png)
 
+11. On obtient l'uid et le gid d'Alice grâce à la commande id 
+
+![image](https://user-images.githubusercontent.com/80455771/191603785-3aef65e6-c0ac-464d-996b-f3b029ae515a.png)
+
+12. Tout comme la question précédente, on utilise la commande id mais cette fois en précisant l'uid 
+
+![image](https://user-images.githubusercontent.com/80455771/191604080-8e2c4982-7add-4a87-b9a9-689c5a564800.png)
+
+13. Avec la commande grep il est possible de retroyver l'id d'un groupe 
+
+![image](https://user-images.githubusercontent.com/80455771/191606454-03417704-0b96-48f9-a0fa-d84566b3f802.png)
+
+
+14. Le groupe qui a pour id 1002 est le groupe dev
+
+![image](https://user-images.githubusercontent.com/80455771/191606104-1818be7f-e260-4588-aa50-f93a52b7b11f.png)
+
+15. Avec la commande gpasswd --delete il est possible de retirer un utilisateur d'un groupe 
+
+![image](https://user-images.githubusercontent.com/80455771/191606782-e0bb0165-c65e-4737-8ccb-a6e47ced5115.png)
+
+
+
