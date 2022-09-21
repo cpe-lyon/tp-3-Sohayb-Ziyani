@@ -6,4 +6,42 @@
 
 ![image](https://user-images.githubusercontent.com/80455771/191514345-b7a5f22b-84d8-4718-a353-f0b8544de7ac.png)
 
-2.
+2. La commande useradd -m m'a permit de créer l'utilisateur avec son dossier personnel et la commande usermod -s de leur attribuer bash comme shell 
+
+![image](https://user-images.githubusercontent.com/80455771/191516962-655be3a0-5dba-4241-977d-8c052fdd993f.png)
+
+3. L'ajout des utilisateurs dans leur groupe réspectifs 
+
+![image](https://user-images.githubusercontent.com/80455771/191517490-59d9c6a2-a574-43a9-9c4c-1bac367efa08.png)
+
+4. Les commandes getent et grep permettent d'afficher les membres d'un groupe 
+
+![image](https://user-images.githubusercontent.com/80455771/191518392-f9e05c05-0b87-42bd-9359-34bf51915e8f.png)
+
+5. La commande chgrp -R permet de ùettre un groupe propriétaire d'un répertoire
+
+![image](https://user-images.githubusercontent.com/80455771/191520299-657908ce-3337-463d-9fae-1482fe91c8cd.png)
+
+6. La commande usermod ... -g ... permet de remplacez le groupe primaire des utilisateurs 
+
+![image](https://user-images.githubusercontent.com/80455771/191522071-00a80fdf-a736-4b4d-9746-322813b7f3aa.png)
+
+7. Création des deux répértoires :
+![image](https://user-images.githubusercontent.com/80455771/191522794-e9f6f9d0-a2db-4f29-9337-0fdd99b23ae3.png)
+
+Attribution des groupes à leur répértoires :
+![image](https://user-images.githubusercontent.com/80455771/191523804-fda28cc0-f225-483b-a321-044db5629d53.png)
+
+Attribution des droits aux groupes :
+![image](https://user-images.githubusercontent.com/80455771/191524454-8840ccb6-8a74-4483-a236-a5931b1624d4.png)
+
+8. Pour que seul le prorpiétaire d'un fichier ait le droit de renommer ou supprimer ce fichier il faut faire chmod u+rwx 
+
+9. Oui car je suis en admin 
+
+![image](https://user-images.githubusercontent.com/80455771/191526398-570d2b2c-5a4b-4269-904e-4a815dda9fa1.png)
+
+10. Pour activer un compte d'utilisateur il faut lui attribuer un mot de passe 
+
+![image](https://user-images.githubusercontent.com/80455771/191527438-d6205229-85f5-46f0-a6a6-0ddb9112b39a.png)
+
