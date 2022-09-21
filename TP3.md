@@ -27,12 +27,15 @@
 ![image](https://user-images.githubusercontent.com/80455771/191522071-00a80fdf-a736-4b4d-9746-322813b7f3aa.png)
 
 7. Création des deux répértoires :
+
 ![image](https://user-images.githubusercontent.com/80455771/191522794-e9f6f9d0-a2db-4f29-9337-0fdd99b23ae3.png)
 
 Attribution des groupes à leur répértoires :
+
 ![image](https://user-images.githubusercontent.com/80455771/191523804-fda28cc0-f225-483b-a321-044db5629d53.png)
 
 Attribution des droits aux groupes :
+
 ![image](https://user-images.githubusercontent.com/80455771/191524454-8840ccb6-8a74-4483-a236-a5931b1624d4.png)
 
 8. Pour que seul le prorpiétaire d'un fichier ait le droit de renommer ou supprimer ce fichier il faut faire chmod u+rwx 
