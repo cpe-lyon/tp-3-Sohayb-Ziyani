@@ -133,6 +133,15 @@ chmod u-w sstest
 ```
 Quand on enlève les droits en écriture, il n'est pas possible de modifier les documents
 
-7. 
+7. Sans les droits d'éxecution il est impossible d'effectuer une seule manipulation
+
+8. L'influence des droits que l'on possède sur le répertoire courant n'influe pas les droits que nous avons sur les fichiers, ils ne sont pas dépendant l'un de l'autre 
+
+Parcontre depuis le répertoire courant il ne sera pas possible de le modifier 
+
+9. 
+```
+chmod g+r fichier
+```
 
 
