@@ -143,5 +143,30 @@ Parcontre depuis le répertoire courant il ne sera pas possible de le modifier
 ```
 chmod g+r fichier
 ```
+10. 
+```
+umask 077 
+touch test2
+-rw------- root root 0 Sep 22 8:53 test2
+```
+11. 
+``` 
+umask 022 
+touch test3
+mkdir test4
+-rw-r--r-- 1 root root 0 Sep 22 8:59 test3
+drwxr-xr-x 2 root root 6 Sep 22 8:59 test4
+```
+12. 
+```
+umask 037
+umask -S
+u=rwx,g=r,o=
+```
+13. 
+chmod u=rx,g=wx,o=r fic / chmod 534 fic
+chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- / chmod 602 fic
+chmod 653 fic en sachant que les droits initiaux de fic sont 711 / chmod rw-r-x--wx fic 
+chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- / chmod 520  fic 
 
-
+14. Il y a seulement root qui a le droit de le modifier car il contient la liste de tous les utilisateurs. 
