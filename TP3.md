@@ -69,5 +69,8 @@ Attribution des droits aux groupes :
 
 ![image](https://user-images.githubusercontent.com/80455771/191606782-e0bb0165-c65e-4737-8ccb-a6e47ced5115.png)
 
-
+16.  Il expire au 1er juin 2021
+```
+usermod --expiredate 2021-06-01 dave
+```
 
