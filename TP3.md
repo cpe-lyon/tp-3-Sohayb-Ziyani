@@ -169,4 +169,7 @@ chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- / c
 chmod 653 fic en sachant que les droits initiaux de fic sont 711 / chmod rw-r-x--wx fic 
 chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- / chmod 520  fic 
 
-14. Il y a seulement root qui a le droit de le modifier car il contient la liste de tous les utilisateurs. 
+14. Avec la commande ci-dessous on peut voir qu'il y a seulement root qui a le droit de le modifier car il contient la liste de tous les utilisateurs. 
+```
+stat /etc/passwd
+```
