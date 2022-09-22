@@ -69,8 +69,70 @@ Attribution des droits aux groupes :
 
 ![image](https://user-images.githubusercontent.com/80455771/191606782-e0bb0165-c65e-4737-8ccb-a6e47ced5115.png)
 
-16.  Il expire au 1er juin 2021
+16. Modifiez le compte de Dave :
+
+- Il expire au 1er juin 2021 :
 ```
 usermod --expiredate 2021-06-01 dave
 ```
+- Il faut changer le mot de passe avant 90 jours :
+```
+chage -M 90 dave
+```
+- Il faut attendre 5 jours pour modifier un mot de passe :
+```
+chage -m 5 dave
+```
+- L' utilisateur est averti 14 jours avant l'expiration de son mot de passe :
+```
+chage -W 14 dave 
+```
+- Le compte sera bloqué 30 jours après expiration du mot de passe :
+```
+chage -I 30 dave
+```
+
+17. On peut vérifier ca avec la commande grep 
+
+![image](https://user-images.githubusercontent.com/80455771/191675106-eff1a755-68c7-4321-a6d3-1d42f9478e7d.png)
+
+18. Nobody est le nom conventionnel d'un compte d'utilisateur à qui aucun fichier n'appartient, qui n'est dans aucun groupe qui a des privilèges et dont les seules possibilités sont celles que tous les "autres utilisateurs" ont.
+
+19. La commande sudo garde le mot de passe pendant 15 minutes
+
+Pour forcer à oublier le mot de passe on peut utiliser :
+```
+sudo -k 
+```
+
+## Exercice 2. Gestions des permissions 
+
+1. 
+![image](https://user-images.githubusercontent.com/80455771/191679157-9ddd8e51-270a-4933-b23d-a253633d9ff0.png)
+
+2. On peut quand même modifier et affichier le fichier avec l'utilisateur root, il ne perd jamais les droits
+
+![image](https://user-images.githubusercontent.com/80455771/191681068-384d49c5-d1a7-4d9c-ad7c-6c34a6668afb.png)
+
+3.  On redonnes les droits :
+```
+chmod 777 ~/test/fichier
+```
+Il est possible de modifier le fichier sans l'utilisateur root 
+
+4. Il est possible d'éxécuter de nouveau car nous avons donné les droits juste avant 
+
+5. Il n'est pas possible de lister le contenu du répertoire car nous avons retirer les droits 
+
+6. Création d'un fichier nouveau et d'un répertoire sstest :
+```
+touch nouveau
+mkdir sstest
+chmod u-w nouveau
+chmod u-w sstest
+```
+Quand on enlève les droits en écriture, il n'est pas possible de modifier les documents
+
+7. 
+
 
